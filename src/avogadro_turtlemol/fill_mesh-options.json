@@ -1,0 +1,8 @@
+{
+    "tolerance":  {"type": "float",    "label": "Tolerance (Å)",          "default": 1.0,  "minimum": 0.0, "order": 0},
+    "randomize":  {"type": "boolean",  "label": "Randomize Orientation",   "default": false, "order": 1},
+    "placement":  {"type": "boolean",  "label": "Randomly Place",          "default": false, "order": 2},
+    "mesh":       {"type": "filePath", "label": "Mesh File (.stl/.obj/.ply)", "default": "", "order": 3},
+    "mesh_scale": {"type": "float",    "label": "Mesh Scale",              "default": 1.0,  "minimum": 0.01, "order": 4},
+    "og_struc":   {"type": "filePath", "label": "Base Structure File",     "default": "", "order": 5}
+}

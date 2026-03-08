@@ -1,0 +1,8 @@
+{
+    "tolerance": {"type": "float", "label": "Tolerance (Å)", "default": 1.0, "minimum": 0.0, "order": 0},
+    "length":    {"type": "float", "label": "Length X (Å)",  "default": 1.0, "minimum": 0.1, "order": 1},
+    "width":     {"type": "float", "label": "Width Y (Å)",   "default": 1.0, "minimum": 0.1, "order": 2},
+    "height":    {"type": "float", "label": "Height Z (Å)",  "default": 1.0, "minimum": 0.1, "order": 3},
+    "randomize": {"type": "boolean", "label": "Randomize Orientation", "default": false, "order": 4},
+    "og_struc":  {"type": "filePath", "label": "Base Structure File",  "default": "", "order": 5}
+}

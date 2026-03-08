@@ -1,0 +1,8 @@
+{
+    "tolerance": {"type": "float",   "label": "Tolerance (Å)",         "default": 1.0, "minimum": 0.0, "order": 0},
+    "radius":    {"type": "float",   "label": "Radius (Å)",            "default": 1.0, "minimum": 0.1, "order": 1},
+    "num_mol":   {"type": "integer", "label": "Number of Molecules",   "default": 1,   "minimum": 1,   "order": 2},
+    "placement": {"type": "boolean", "label": "Randomly Place",        "default": false, "order": 3},
+    "randomize": {"type": "boolean", "label": "Randomize Orientation", "default": false, "order": 4},
+    "og_struc":  {"type": "filePath","label": "Base Structure File",   "default": "", "order": 5}
+}

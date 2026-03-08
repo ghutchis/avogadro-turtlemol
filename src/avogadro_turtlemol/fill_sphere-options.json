@@ -1,0 +1,6 @@
+{
+    "tolerance": {"type": "float", "label": "Tolerance (Å)", "default": 1.0, "minimum": 0.0, "order": 0},
+    "radius":    {"type": "float", "label": "Radius (Å)",    "default": 1.0, "minimum": 0.1, "order": 1},
+    "randomize": {"type": "boolean", "label": "Randomize Orientation", "default": false, "order": 2},
+    "og_struc":  {"type": "filePath", "label": "Base Structure File",  "default": "", "order": 3}
+}

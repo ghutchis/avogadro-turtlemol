@@ -1,0 +1,103 @@
+[project]
+name = "avogadro-turtlemol"
+version = "0.1.0"
+description = "Fill and pack molecular structures for Avogadro 2 using TurtleMol"
+authors = [
+    {name = "Geoff Hutchison", email = "geoff.hutchison@gmail.com"},
+    {name = "Dominick Filonowich", email = "filonowichd74@gmail.com"},
+]
+license = "BSD-3-Clause"
+dependencies = ["TurtleMol>=0.4", "pandas>=1.0"]
+requires-python = ">= 3.11"
+
+[project.scripts]
+avogadro-turtlemol = "avogadro_turtlemol:main"
+
+[build-system]
+build-backend = "uv_build"
+requires = ["uv_build>=0.10.2,<0.11.0"]
+
+[tool.avogadro]
+minimum-avogadro-version = "1.103"
+
+[[tool.avogadro.menu-commands]]
+identifier = "fill-box"
+input-format = "xyz"
+menu = "Build"
+submenu = "TurtleMol"
+item = "Fill Box..."
+user-options = "src/avogadro_turtlemol/fill_box-options.json"
+
+[[tool.avogadro.menu-commands]]
+identifier = "fill-sphere"
+input-format = "xyz"
+menu = "Build"
+submenu = "TurtleMol"
+item = "Fill Sphere..."
+user-options = "src/avogadro_turtlemol/fill_sphere-options.json"
+
+[[tool.avogadro.menu-commands]]
+identifier = "fill-mesh"
+input-format = "xyz"
+menu = "Build"
+submenu = "TurtleMol"
+item = "Fill Mesh..."
+user-options = "src/avogadro_turtlemol/fill_mesh-options.json"
+
+[[tool.avogadro.menu-commands]]
+identifier = "density-box"
+input-format = "xyz"
+menu = "Build"
+submenu = "TurtleMol"
+item = "Density Box..."
+user-options = "src/avogadro_turtlemol/density_box-options.json"
+
+[[tool.avogadro.menu-commands]]
+identifier = "density-sphere"
+input-format = "xyz"
+menu = "Build"
+submenu = "TurtleMol"
+item = "Density Sphere..."
+user-options = "src/avogadro_turtlemol/density_sphere-options.json"
+
+[[tool.avogadro.menu-commands]]
+identifier = "density-mesh"
+input-format = "xyz"
+menu = "Build"
+submenu = "TurtleMol"
+item = "Density Mesh..."
+user-options = "src/avogadro_turtlemol/density_mesh-options.json"
+
+[[tool.avogadro.menu-commands]]
+identifier = "definite-box"
+input-format = "xyz"
+menu = "Build"
+submenu = "TurtleMol"
+item = "Definite Box..."
+user-options = "src/avogadro_turtlemol/definite_box-options.json"
+
+[[tool.avogadro.menu-commands]]
+identifier = "definite-sphere"
+input-format = "xyz"
+menu = "Build"
+submenu = "TurtleMol"
+item = "Definite Sphere..."
+user-options = "src/avogadro_turtlemol/definite_sphere-options.json"
+
+[[tool.avogadro.menu-commands]]
+identifier = "definite-mesh"
+input-format = "xyz"
+menu = "Build"
+submenu = "TurtleMol"
+item = "Definite Mesh..."
+user-options = "src/avogadro_turtlemol/definite_mesh-options.json"
+
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["win-64", "linux-64", "osx-arm64"]
+
+[tool.pixi.pypi-dependencies]
+avogadro-turtlemol = { path = ".", editable = true }
+
+[tool.pixi.tasks]

@@ -1,0 +1,7 @@
+{
+    "tolerance": {"type": "float", "label": "Tolerance (Å)",    "default": 1.0, "minimum": 0.0, "order": 0},
+    "radius":    {"type": "float", "label": "Radius (Å)",       "default": 1.0, "minimum": 0.1, "order": 1},
+    "density":   {"type": "float", "label": "Density (g/mol·mL⁻¹)", "default": 1.0, "minimum": 0.0, "order": 2},
+    "randomize": {"type": "boolean", "label": "Randomize Orientation", "default": false, "order": 3},
+    "og_struc":  {"type": "filePath", "label": "Base Structure File",  "default": "", "order": 4}
+}
